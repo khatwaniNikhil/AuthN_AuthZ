@@ -1,6 +1,7 @@
 # References
 1. https://medium.com/vx-company/oauth-and-openid-explained-with-real-life-examples-bf40daa8049f
 2. https://developer.okta.com/blog/2019/10/21/illustrated-guide-to-oauth-and-oidc
+3. https://medium.com/@robert.broeckelmann/when-to-use-which-oauth2-grants-and-oidc-flows-ec6a5c00d864
 
 # OAuth
 1. Real word example
@@ -31,3 +32,29 @@
    2. authentication - user verifies it identity over facebook by entering login credentials.
 5. How is Security handled
    1. access tokens with claims(contain information about an identity)
+
+# Trust and Confidentiality 
+   ## Untrusted versus trusted
+   1. Untrusted client
+      1. users credentials are never exposed to the client makes it more secure
+      2. User enters credentials at auth server domain and client is just provided access token
+      3. Untrusted does not mean malicious but need user intervention to get access token.
+   2. Trusted client
+      1. Client asks for credentials from user and then client passes the same to Auth server to get token
+
+  ## Confidential versus public clients
+   1. Confidential
+      1. clients that can hide their client credentials
+      2. Clients running a server side and use it for OAuth flow integration
+   2. Public
+      1. clients that cannot hide their client credentials
+      2. your client is downloaded by your user
+      3. ran in the user's browser (source code is visible and can be searched for the credentials)
+      4. native desktop client(theoretically source code can be decompiled)
+
+  ## Choosing authorisation flow basis Trust and Confidentiality 
+
+  ![](https://github.com/khatwaniNikhil/AuthN_AuthZ/blob/main/different_authorisation_flows.png)
+  **Note** - Second column “token” means implicit flow
+
+
