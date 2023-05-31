@@ -13,7 +13,7 @@
 3. support customisation - leveraged for on demand migration of users
 4. MFA via TOTP
 
-# challenges
+# challenges | roadmap
 1. single user map to multi tenants
 2. keycloak as centralised place to login/logout user from specific/all applications. preferably single click
 3. Forgot Password support
