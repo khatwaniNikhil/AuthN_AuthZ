@@ -4,7 +4,7 @@
 2. CAS protocol based SSO (using service ticket grant type, self hosted CAS server)
    1. SAAS tenant's user SSO across multiple accounts of same tenant
    2. org. internal ops and dev access to tenant web app
-3. uthorization Code grant type
+3. authorization Code grant type
    1. org. internal ops and dev access to ticketing internal s/w 
 
 # Why keycloak chosen
