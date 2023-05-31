@@ -1,3 +1,4 @@
+# Keycloak - Sequence Diagram
 ![](https://github.com/khatwaniNikhil/AuthN_AuthZ/blob/main/keycloak_sequence_diagram.png)
 
 # Use cases by Grant Types 
