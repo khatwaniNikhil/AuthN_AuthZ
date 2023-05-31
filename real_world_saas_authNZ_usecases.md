@@ -1,3 +1,5 @@
+![](https://github.com/khatwaniNikhil/AuthN_AuthZ/blob/main/keycloak_sequence_diagram.png)
+
 # Use cases by Grant Types 
 1. Password grant type
    1. Android app used in warehouse, REST S2S integration 
