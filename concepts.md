@@ -35,22 +35,23 @@
 
 # Trust and Confidentiality 
    ## Untrusted versus trusted
-   1. Untrusted client
-      1. users credentials are never exposed to the client makes it more secure
-      2. User enters credentials at auth server domain and client is just provided access token
-      3. Untrusted does not mean malicious but need user intervention to get access token.
+   1. Security guidelines for Untrusted client
+      1. users credentials are never exposed to the client makes it more secure, user enters credentials at auth server domain and client is just provided access token
+      2. Untrusted does not mean malicious but need user intervention to get access token.
    2. Trusted client
       1. Client asks for credentials from user and then client passes the same to Auth server to get token
 
   ## Confidential versus public clients
    1. Confidential
-      1. clients that can hide their client credentials
+      1. clients that can hide their client credentials, can’t reverse engineer them to get secrets.
       2. Clients running a server side and use it for OAuth flow integration
+      3. not running on a desktop or distributed through an app store
    2. Public
-      1. clients that cannot hide their client credentials
-      2. your client is downloaded by your user
-      3. ran in the user's browser (source code is visible and can be searched for the credentials)
-      4. native desktop client(theoretically source code can be decompiled)
+      1. browsers, mobile apps, and IoT devices
+      2. clients that cannot hide their client credentials
+      3. your client is downloaded by your user
+      4. ran in the user's browser (source code is visible and can be searched for the credentials)
+      5. native desktop client(theoretically source code can be decompiled)
 
   ## Choosing authorisation flow basis Trust and Confidentiality 
 
