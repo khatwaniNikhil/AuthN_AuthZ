@@ -5,6 +5,7 @@
 4. admin UI
 
 # MFA
+1. TOTP
 
 # Integration
 1. Social login
