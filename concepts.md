@@ -5,7 +5,7 @@
 
 # OAuth
 1. Real word example
-    1. Linkedin given restricted access(without sharing username and password) to our google contacts to join linkedin
+    1. Giving Linkedin a restricted access(without sharing username and password) to our google contacts to join linkedin
     2. on hotel checkin - post user identity check, key issued is analogous to access token for acccessing specific room and other allowed services like gym, spa etc.
 2. Key steps
    1. verify the actual owner identity(user who is sharing his google contacts)
