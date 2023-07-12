@@ -67,7 +67,8 @@
 
   ##### use case
   1. web and mobile apps, as it provided extra layer of security via extra hop of sharing secret and authcode to token exchange.
-  2. if secret cannot be stored securely or for extra security against attacks using PKCE extension.
+  2. For native apps, use native browser so that redirection is possible
+  3. if secret cannot be stored securely or for extra security against attacks using PKCE extension.
 
   #### 2. client credentials driven token
   (client enters his clientid and secret) -> (token issued) -> (client access data using token)
