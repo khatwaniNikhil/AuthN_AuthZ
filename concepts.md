@@ -58,4 +58,28 @@
   ![](https://github.com/khatwaniNikhil/AuthN_AuthZ/blob/main/different_authorisation_flows.png)
   **Note** - Second column “token” means implicit flow
 
+  ### Recommended grant types
+  #### 1. authorization code
+  (user auth + access permissions)  ->  (issued auth code to client)  ->(client auth via secret + token exchange using auth code)
+
+  ##### use case
+  1. web and mobile apps, as it provided extra layer of security via extra hop of sharing secret and authcode to token exchange.
+  2. if secret cannot be stored securely or for extra security against attacks using PKCE extension.
+
+  #### 2. client credentials driven token
+  (client enters his clientid and secret) -> (token issued) -> (client access data using token)
+  
+  ##### use case
+  1. user auth skipped
+  2. server to server api based integration use case
+  3. access is for resources which are somewhat owned by client
+
+ ### Not recommended grant types
+ #### 1. implicit flow
+ 1. skips auth code and directly gives token but  insecure, broken, deprecated, and should never, ever be used 
+
+ #### 2. resource Owner Password flow 
+ 1. user/resource owner credentials are shared directly with client app instead of opening a browser and sharing with auth server in authorization grant
+ 2. does not support any of the auxiliary security features like Multi-factor authentication and Password resets.
+
 
