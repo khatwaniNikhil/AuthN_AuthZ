@@ -2,6 +2,8 @@
 1. https://medium.com/vx-company/oauth-and-openid-explained-with-real-life-examples-bf40daa8049f
 2. https://developer.okta.com/blog/2019/10/21/illustrated-guide-to-oauth-and-oidc
 3. https://medium.com/@robert.broeckelmann/when-to-use-which-oauth2-grants-and-oidc-flows-ec6a5c00d864
+4. https://darutk.medium.com/the-simplest-guide-to-oauth-2-0-8c71bd9a15bb
+5. https://darutk.medium.com/diagrams-and-movies-of-all-the-oauth-2-0-flows-194f3c3ade85
 
 # OAuth
 1. Real word example
