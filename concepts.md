@@ -4,6 +4,7 @@
 3. https://medium.com/@robert.broeckelmann/when-to-use-which-oauth2-grants-and-oidc-flows-ec6a5c00d864
 4. https://darutk.medium.com/the-simplest-guide-to-oauth-2-0-8c71bd9a15bb
 5. https://darutk.medium.com/diagrams-and-movies-of-all-the-oauth-2-0-flows-194f3c3ade85
+6. https://darutk.medium.com/oauth-2-0-client-authentication-4b5f929305d4
 
 # OAuth
 1. Real word example
