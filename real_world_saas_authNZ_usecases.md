@@ -1,20 +1,26 @@
-# Keycloak - Sequence Diagram
-![](https://github.com/khatwaniNikhil/AuthN_AuthZ/blob/main/keycloak_sequence_diagram.png)
+# UC SAAS product auth flows with inhouse auth server
+1.  e-commerce seller data exposed over JSON based REST endpoints as well as XML based SOAP api’s
+2. HTTP BASIC for soap api’s
+3. OAuth based registration and auth flows for third party apps to access on behalf of seller.
+    1. Android app for within warehouse pick/pack: password grant type(provides seller credentials)
+        1. client registered or not verification as well as current user login credentials verification
+        2. Token issuance
+        3. Token based REST api access
+    2. Main SAAS Web App LOGIN - SSO + JSessionID/cookie 
+        1. CAS based SSO via custom oauth grant type “service ticket grant” flow to get list of domains where given tenant has access and service ticket for current requested domain access.
+        2. Issued service ticket by auth server is validated to issue cookie based web access.
+     3. authorization Code grant type - org. internal ops and dev access to ticketing internal s/w 
+           
 
-# Use cases by Grant Types 
-1. Password grant type
-   1. Android app used in warehouse, REST S2S integration 
-2. CAS protocol based SSO (using service ticket grant type, self hosted CAS server)
-   1. SAAS tenant's user SSO across multiple accounts of same tenant
-   2. org. internal ops and dev access to tenant web app
-3. authorization Code grant type
-   1. org. internal ops and dev access to ticketing internal s/w 
-
+# Migration from inhouse auth server to Keycloak
 # Why keycloak chosen
 1. open source
 2. admin UI support
 3. support customisation - leveraged for on demand migration of users
 4. MFA via TOTP
+
+# Keycloak - Sequence Diagram
+![](https://github.com/khatwaniNikhil/AuthN_AuthZ/blob/main/keycloak_sequence_diagram.png)
 
 # challenges | roadmap
 1. single user map to multi tenants
