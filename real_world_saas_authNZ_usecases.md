@@ -1,5 +1,5 @@
 # UC SAAS product auth flows with inhouse auth server
-[OAuth2 support in Uniware.pdf](https://github.com/khatwaniNikhil/AuthN_AuthZ/files/12380184/OAuth2.support.in.Uniware.pdf)
+[OAuth2_Support_SAAS.pdf](https://github.com/khatwaniNikhil/AuthN_AuthZ/files/12380184/OAuth2.support.in.Uniware.pdf)
 
 1.  e-commerce seller data exposed over JSON based REST endpoints as well as XML based SOAP api’s
 2. HTTP BASIC for soap api’s
